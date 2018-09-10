@@ -12,6 +12,7 @@ services:
       - thread_pool.index.queue_size=100000
       - thread_pool.search.queue_size=100000
       - thread_pool.bulk.queue_size=100000
+      - "ES_JAVA_OPTS=-Xms1024m -Xmx1024m"
     ulimits:
       nofile:
         soft: 65536
