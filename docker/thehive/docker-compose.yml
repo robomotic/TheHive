@@ -18,7 +18,7 @@ services:
         soft: 65536
         hard: 65536
     volumes:
-      - "$PWD/esdata":/usr/share/elasticsearch/data
+      - ./esdata:/usr/share/elasticsearch/data
   cortex:
     image: thehiveproject/cortex:latest
     mem_limit: 8589934592
